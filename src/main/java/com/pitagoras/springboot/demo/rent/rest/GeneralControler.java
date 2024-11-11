@@ -15,4 +15,8 @@ public class GeneralControler {
     public String tellAboutApplication(){
         return "This is an app we are creating for learning purposes!";
     }
+    @GetMapping("/devtools")
+    public String testingDevTools(){
+        return "This should work.Because I changed the system";
+    }
 }
