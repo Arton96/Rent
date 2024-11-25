@@ -1,16 +1,16 @@
 package com.pitagoras.springboot.demo.rent.rest;
 
-import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Lazy
-public class Golf implements Car{
-    public Golf(){
+@Primary
+public class Pickup implements Car{
+    public Pickup(){
         System.out.println("Constructor: " + getClass().getName());
     }
     @Override
-    public String drive() {
-        return "Driving GOLF 200 km/h";
+    public String drive(){
+        return "Pikapi ma i shpejt n rajon";
     }
 }
